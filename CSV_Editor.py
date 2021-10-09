@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 from tkinter.filedialog import askopenfilename, asksaveasfilename
 import csv
 
-
+# Python learning
 # Funktion - open a file for editing/reading
 def open_file():
 
@@ -85,18 +85,18 @@ txt_edit = tk.Text(window)
 fr_buttons = tk.Frame(window,  bg = "cyan")
 
 # Buttons 
-btn_open = tk.Button(fr_buttons, text = "Open", command = open_file)
-btn_save = tk.Button(fr_buttons, text = "Save", command = save_file)
-btn_delete_1 = tk.Button(fr_buttons, text = "Close", command = close_window)
-btn_delete_2 = tk.Button(fr_buttons, text = "Graphic", command = open_graphic)
-btn_delete_3 = tk.Button(fr_buttons, text = "Button 2")
+button_open = tk.Button(fr_buttons, text = "Open", command = open_file)
+button_save = tk.Button(fr_buttons, text = "Save", command = save_file)
+button_delete_1 = tk.Button(fr_buttons, text = "Close", command = close_window)
+button_delete_2 = tk.Button(fr_buttons, text = "Graphic", command = open_graphic)
+button_delete_3 = tk.Button(fr_buttons, text = "Button 2")
 
 # Grid
-btn_open.grid(row = 0, column = 0, sticky = "ew", padx = 5, pady = 5)
-btn_save.grid(row = 1, column = 0, sticky = "ew", padx = 5, pady = 5)
-btn_delete_1.grid(row = 2, column = 0, sticky = "ew", padx = 5, pady = 5)
-btn_delete_2.grid(row = 3, column = 0, sticky = "ew", padx = 5, pady = 5)
-btn_delete_3.grid(row = 4, column = 0, sticky = "ew", padx = 5, pady = 5)
+button_open.grid(row = 0, column = 0, sticky = "ew", padx = 5, pady = 5)
+button_save.grid(row = 1, column = 0, sticky = "ew", padx = 5, pady = 5)
+button_delete_1.grid(row = 2, column = 0, sticky = "ew", padx = 5, pady = 5)
+button_delete_2.grid(row = 3, column = 0, sticky = "ew", padx = 5, pady = 5)
+button_delete_3.grid(row = 4, column = 0, sticky = "ew", padx = 5, pady = 5)
 
 fr_buttons.grid(row = 0, column = 0, sticky = "ns", padx = 15, pady = 15)
 txt_edit.grid(row = 0, column = 1, sticky = "nsew", padx = 15, pady = 15)
